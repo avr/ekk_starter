@@ -1,0 +1,136 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+*/
+/* =============================================================================
+   Author: Aaron Van Ruler
+   Site: 
+   ========================================================================== */
+.two-col {
+  background-color: #cccccc;
+}
+.two-col #header, .two-col #footer {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 310px;
+}
+* html .two-col #header, * html .two-col #footer {
+  overflow-x: hidden;
+}
+.two-col #sidebar {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 110px;
+}
+* html .two-col #sidebar {
+  overflow-x: hidden;
+}
+.two-col #content {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 190px;
+}
+* html .two-col #content {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+}
+
+.wrapper {
+  margin: auto;
+  width: 960px;
+}
+
+#header-container {
+  background-color: #f16529;
+  height: 130px;
+  border-bottom: 20px solid #e44d26;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0 40px 40px -40px #aaaaaa;
+  -moz-box-shadow: 0 40px 40px -40px #aaaaaa;
+  box-shadow: 0 40px 40px -40px #aaaaaa;
+}
+
+h2, h3 {
+  margin: 30px 0;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+#title, h2, h3 {
+  font-weight: normal;
+}
+
+#title {
+  font-size: 60px;
+  color: white;
+  float: left;
+}
+
+header nav {
+  float: right;
+  margin-top: 100px;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+nav a {
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  background-color: #e44d26;
+}
+
+aside {
+  color: white;
+  padding: 20px;
+  float: right;
+  height: 500px;
+  width: 200px;
+  background-color: #f16529;
+  border-bottom: 20px solid #e44d26;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0 0px 40px -10px #aaaaaa;
+  -moz-box-shadow: 0 0px 40px -10px #aaaaaa;
+  box-shadow: 0 0px 40px -10px #aaaaaa;
+}
+
+#main p {
+  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+  width: 620px;
+}
+
+article header {
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  width: 700px;
+  -webkit-box-shadow: 0 45px 60px -60px #aaaaaa;
+  -moz-box-shadow: 0 45px 60px -60px #aaaaaa;
+  box-shadow: 0 45px 60px -60px #aaaaaa;
+}
+
+#footer-container {
+  background-color: #f16529;
+  height: 240px;
+  border-top: 20px solid #e44d26;
+  margin-top: 50px;
+  -webkit-box-shadow: 0 -40px 40px -40px #aaaaaa;
+  -moz-box-shadow: 0 -40px 40px -40px #aaaaaa;
+  box-shadow: 0 -40px 40px -40px #aaaaaa;
+}
+
+#footer-container footer {
+  color: white;
+}
