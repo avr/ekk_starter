@@ -1,14 +1,12 @@
 <!-- Begin Header -->
-<ul id="skip" title="Accessibility options">
-  <li><a href="#content">Skip to Content</a></li>
-  <li><a href="#sidebar">Skip to Sidebar</a></li>
-  <li><a href="#nav">Skip to Navigation</a></li>
-</ul> <!-- #skip -->
+<div id="skip-links">
+  <a href="#content">Skip to Content</a>
+  <a href="#sidebar">Skip to Sidebar</a>
+  <a href="#nav">Skip to Navigation</a>
+</div> <!-- #skip -->
 
-
-<div id="header">
+<header id="header">
   <h1><a href="/">Preston Trail</a></h1>
-<?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/nav.php") ?>
-  
-</div> <!-- #header -->
+  <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/nav.php") ?>
+</header> <!-- #header -->
 <!-- End Header -->

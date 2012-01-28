@@ -1,36 +1,29 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
-*/
-
-$blueprint-grid-columns: 24;
-$blueprint-grid-width: 30px;
-$blueprint-grid-margin: 10px;
-
-@import "blueprint";
-
 /* =============================================================================
    Author: Aaron Van Ruler
    Site: 
    ========================================================================== */
 
-.two-col {
-  background-color: #cccccc;
-  #header, #footer {
-   @include column(8); }
-  #sidebar {
-   @include column(3); }
-  #content {
-   @include column(5, true);
-  }
-}
+$blueprint-grid-columns: 16;
+$blueprint-grid-width: 60px;
+$blueprint-grid-margin: 10px;
+
+@import "blueprint/grid";
 
 body{
-  font-family:Helvetica, Helvetica Neue, Arial, sans-serif;
+  font:16px/26px Helvetica, Helvetica Neue, Arial;
+  background-color: #cccccc;
 }
 
-.wrapper{
-  margin:auto;
-  width:960px;
+h1, h2, h3{margin:0 0 30px; line-height: 1;}
+h2{font-size: 40px;}
+h3{font-size: 30px;}
+
+#title, h2, h3{font-weight:normal;}
+
+#title{
+  font-size: 60px;
+  color:white;
+  float:left;
 }
 
 #header-container{
@@ -43,50 +36,32 @@ body{
           box-shadow:0 40px 40px -40px #AAA;
 }
 
-h2, h3{margin:30px 0;}
-h2{font-size: 40px;}
-h3{font-size: 30px;}
-#title, h2, h3{font-weight:normal;}
-
-#title{
-  font-size: 60px;
-  color:white;
-  float:left;
+@import "partials/suckerfish";
+header {
+  @include container();
+  nav {
+    @include suckerfish(100px, 100px);
+  }
 }
 
-header nav{
-  float:right;
-  margin-top:100px;
-}
-
-header nav ul li{
-  display:inline;
-}
-
-nav a{
-  padding:20px;
-  color:white;
-  text-decoration:none;
-  background-color:#e44d26;
+.two-col {
+  #content-wrap {
+    @include container;
+    #content {
+      @include column(12); }
+    #sidebar {
+      @include column(4, true); }
+  }
 }
 
 aside{
   color:white;
-  padding:20px;
-  float:right;
-  height:500px;
-  width:200px;
   background-color:#f16529;
   border-bottom:20px solid #e44d26;
   margin-bottom:50px;
   -webkit-box-shadow:0 0px 40px -10px #AAA;
      -moz-box-shadow:0 0px 40px -10px #AAA;
           box-shadow:0 0px 40px -10px #AAA;
-}
-
-#main p{
-  font:16px/26px Helvetica, Helvetica Neue, Arial;
-  width:620px;
 }
 
 article header{
@@ -109,5 +84,6 @@ article header{
 }
 
 #footer-container footer{
+  @include container();
   color:white;
 }

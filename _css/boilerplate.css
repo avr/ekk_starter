@@ -214,6 +214,20 @@ table { border-collapse: collapse; border-spacing: 0; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
+#skip-links a, #skip-links a:link, #skip-links a:visited, #skip-links a:hover{
+  height: 1px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: -500px;
+  width: 1px;
+}
+#skip-links a:active, #skip-links a:focus {
+  position: static;
+  height: auto;
+  width: auto;
+}
+
 /* =============================================================================
    Print styles.
    Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/

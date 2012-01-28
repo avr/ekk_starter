@@ -1,62 +1,15 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
-*/
 /* =============================================================================
    Author: Aaron Van Ruler
    Site: 
    ========================================================================== */
-.two-col {
+body {
+  font: 16px/26px Helvetica, Helvetica Neue, Arial;
   background-color: #cccccc;
 }
-.two-col #header, .two-col #footer {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 310px;
-}
-* html .two-col #header, * html .two-col #footer {
-  overflow-x: hidden;
-}
-.two-col #sidebar {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 110px;
-}
-* html .two-col #sidebar {
-  overflow-x: hidden;
-}
-.two-col #content {
-  display: inline;
-  float: left;
-  margin-right: 0;
-  width: 190px;
-}
-* html .two-col #content {
-  overflow-x: hidden;
-}
 
-body {
-  font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
-}
-
-.wrapper {
-  margin: auto;
-  width: 960px;
-}
-
-#header-container {
-  background-color: #f16529;
-  height: 130px;
-  border-bottom: 20px solid #e44d26;
-  margin-bottom: 50px;
-  -webkit-box-shadow: 0 40px 40px -40px #aaaaaa;
-  -moz-box-shadow: 0 40px 40px -40px #aaaaaa;
-  box-shadow: 0 40px 40px -40px #aaaaaa;
-}
-
-h2, h3 {
-  margin: 30px 0;
+h1, h2, h3 {
+  margin: 0 0 30px;
+  line-height: 1;
 }
 
 h2 {
@@ -77,39 +30,91 @@ h3 {
   float: left;
 }
 
-header nav {
-  float: right;
-  margin-top: 100px;
+#header-container {
+  background-color: #f16529;
+  height: 130px;
+  border-bottom: 20px solid #e44d26;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0 40px 40px -40px #aaaaaa;
+  -moz-box-shadow: 0 40px 40px -40px #aaaaaa;
+  box-shadow: 0 40px 40px -40px #aaaaaa;
 }
 
-header nav ul li {
+header {
+  width: 1110px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+header nav a {
+  display: block;
+  width: 100px;
+}
+header nav li {
+  float: left;
+  width: 100px;
+}
+header nav li:hover ul, header nav li.sfhover ul {
+  left: auto;
+}
+header nav li:hover ul li, header nav li.sfhover ul li {
+  float: none;
+  display: block;
+}
+header nav li:hover ul ul, header nav li.sfhover ul ul {
+  left: -999em;
+}
+header nav li li:hover ul, header nav li li.sfhover ul {
+  left: auto;
+}
+header nav li ul {
+  position: absolute;
+  width: 100px;
+  left: -999em;
+}
+header nav li ul ul {
+  margin: -1em 0 0 100px;
+}
+
+.two-col #content-wrap {
+  width: 1110px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+.two-col #content-wrap #content {
   display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 830px;
 }
-
-nav a {
-  padding: 20px;
-  color: white;
-  text-decoration: none;
-  background-color: #e44d26;
+* html .two-col #content-wrap #content {
+  overflow-x: hidden;
+}
+.two-col #content-wrap #sidebar {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 270px;
+}
+* html .two-col #content-wrap #sidebar {
+  overflow-x: hidden;
 }
 
 aside {
   color: white;
-  padding: 20px;
-  float: right;
-  height: 500px;
-  width: 200px;
   background-color: #f16529;
   border-bottom: 20px solid #e44d26;
   margin-bottom: 50px;
   -webkit-box-shadow: 0 0px 40px -10px #aaaaaa;
   -moz-box-shadow: 0 0px 40px -10px #aaaaaa;
   box-shadow: 0 0px 40px -10px #aaaaaa;
-}
-
-#main p {
-  font: 16px/26px Helvetica, Helvetica Neue, Arial;
-  width: 620px;
 }
 
 article header {
@@ -132,5 +137,9 @@ article header {
 }
 
 #footer-container footer {
+  width: 1110px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
   color: white;
 }

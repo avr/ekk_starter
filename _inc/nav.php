@@ -1,3 +1,4 @@
+<nav>
 <ul id="nav">
   <li id="nav_home"><a href="/">Home</a></li>
   <li><a href="mcms_page.php">About Us</a>
@@ -24,3 +25,4 @@
   <li><a href="mcms_page.php">Resources</a></li>
   <li><a href="mcms_page.php">Contact</a></li>
 </ul> <!-- #nav -->
+</nav>
