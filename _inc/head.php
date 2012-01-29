@@ -6,6 +6,4 @@
 <link rel="stylesheet" href="/_css/styles.css" title="default" />
 <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
 
-<!--[if lt IE 9]>
-<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+<script src="/_js/libs/modernizr.min.js"></script>
