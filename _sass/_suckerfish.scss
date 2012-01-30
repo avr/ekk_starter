@@ -1,0 +1,43 @@
+@mixin suckerfish($topLevelWidth, $lowerLevelWidth) {
+  ul { 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+  }
+  a {
+    display: block;
+    width: $topLevelWidth;
+  }
+  li {
+    float: left;
+    width: $topLevelWidth;
+    &:hover, &.sfhover {
+      ul {
+        left:auto;
+        
+          li {
+              float: none;
+              display: block;
+          }
+        
+        ul {
+          left: -999em;
+        }
+      }
+    }
+    li:hover, li.sfhover {
+      ul {
+        left: auto;
+      }
+    }
+    ul {
+      position: absolute;
+      width: $lowerLevelWidth;
+      left: -999em;
+      ul {
+        margin: -1em 0 0 $lowerLevelWidth;
+      }
+    }
+  }
+}
