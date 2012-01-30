@@ -5,11 +5,12 @@
 
 <script src="/_js/site.js"></script>
 
-<? getContent(
-   "site",
-   "display:detail",
-   "show:__trackingcode__"
-   );
+<?php
+  // getContent(
+  //   "site",
+  //   "display:detail",
+  //   "show:__trackingcode__"
+  // );
 ?>
 
 <!--[if lt IE 7 ]>

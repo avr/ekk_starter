@@ -4,18 +4,20 @@
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title></title>
-  <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/head.php") ?>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <?php include($_SERVER["DOCUMENT_ROOT"] . "/_inc/head.php"); ?>
 </head>
 
-  <body>
-    <div id="container">
+<body class="two-col">
+  <div id="header-container">
     <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/header.php") ?>
-      <div id="container-inner">
-        <div id="content-wrap">
-          <div id="content">
+  </div> <!-- #header-container -->
+  
+  <div id="main-container">
+    <div id="content-wrap">
+      <section id="content">
 
             <h2>Test Sermon 1</h2>
               <ul id="byline">
@@ -37,17 +39,17 @@
               <p>Test Sermon 1 Content</p>
             </div>
           
-          </div> <!-- #content -->
-          <div id="sidebar">
-<?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/sidebar_sermons.php") ?>
-          </div> <!-- #sidebar -->
-        </div> <!-- #content-wrap -->
-      </div> <!-- #container-inner -->
-    
-    <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/footer.php") ?>
-    
-    </div> <!-- #container -->
+      </section> <!-- #content -->
+      <aside id="sidebar">
+        <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/sidebar_sermons.php") ?>
+      </aside> <!-- #sidebar -->
+    </div> <!-- #content-wrap -->
+  </div> <!-- #main-container -->
   
-    <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/scripts.php") ?>
-  </body>
+  <div id="footer-container">
+    <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/footer.php") ?>
+  </div> <!-- #footer-container -->
+
+  <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/scripts.php") ?>
+</body>
 </html>

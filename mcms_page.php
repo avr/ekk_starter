@@ -4,19 +4,20 @@
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title></title>
-  <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/head.php") ?>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <?php include($_SERVER["DOCUMENT_ROOT"] . "/_inc/head.php"); ?>
 </head>
 
-  <body>
-    <div id="container">
+<body class="two-col">
+  <div id="header-container">
     <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/header.php") ?>
-      <div id="container-inner">
-        <div id="content-wrap">
-          <div id="content">
-                  
+  </div> <!-- #header-container -->
+  
+  <div id="main-container">
+    <div id="content-wrap">
+      <section id="content">
             <h2>This is a 2nd level heading</h2>
             <p>Here's a paragraph. <strong>This sentence is strong.</strong> <em>This sentence is emphasized.</em> <b>This sentence is bold.</b> <i>This sentence is italic.</i> <a href="#">This sentence is a link.</a> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed odio dolor, tempor a, posuere eu, tincidunt at, nibh. Nam velit est, accumsan eu, varius sit amet, auctor sed, ipsum. Ut porta. Ut massa.
             <h3>This is a 3rd level heading</h3>
@@ -39,17 +40,17 @@
             <p>Praesent volutpat diam hendrerit eros. Cras vitae massa in enim tristique gravida. Suspendisse potenti. Morbi eleifend volutpat lectus. Morbi sit amet tellus non nibh facilisis feugiat. Maecenas ac quam sed mi viverra scelerisque. Praesent magna tellus, fringilla vitae, tempor tincidunt, gravida sit amet, mi. Praesent est mi, adipiscing non, egestas ac, tincidunt sed, leo. Curabitur auctor sapien et nisi. Ut urna. Etiam ut massa eu nunc tempor aliquam.</p>
             <p>Here's a short paragraph.</p>
                   
-          </div> <!-- #content -->
-          <div id="sidebar">
-            
-          </div> <!-- #sidebar -->
-        </div> <!-- #content-wrap -->
-      </div> <!-- #container-inner -->
-    
-    <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/footer.php") ?>
-    
-    </div> <!-- #container -->
+      </section> <!-- #content -->
+      <aside id="sidebar">
+        
+      </aside> <!-- #sidebar -->
+    </div> <!-- #content-wrap -->
+  </div> <!-- #main-container -->
   
-    <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/scripts.php") ?>
-  </body>
+  <div id="footer-container">
+    <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/footer.php") ?>
+  </div> <!-- #footer-container -->
+
+  <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/scripts.php") ?>
+</body>
 </html>

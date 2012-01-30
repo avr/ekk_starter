@@ -6,7 +6,7 @@
 </div> <!-- #skip -->
 
 <header id="header">
-  <h1><a href="/">Preston Trail</a></h1>
+  <h1><a href="/">Site Name</a></h1>
   <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/nav.php") ?>
 </header> <!-- #header -->
 <!-- End Header -->

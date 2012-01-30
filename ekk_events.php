@@ -4,18 +4,20 @@
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title></title>
-  <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/head.php") ?>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <?php include($_SERVER["DOCUMENT_ROOT"] . "/_inc/head.php"); ?>
 </head>
 
-  <body>
-    <div id="container">
+<body class="two-col">
+  <div id="header-container">
     <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/header.php") ?>
-      <div id="container-inner">
-        <div id="content-wrap">
-          <div id="content">
+  </div> <!-- #header-container -->
+  
+  <div id="main-container">
+    <div id="content-wrap">
+      <section id="content">
 
             <h2>August 26, 2007</h2>
             <div class="sermonbox alt">
@@ -29,15 +31,17 @@
               <p class="eventtime">Sunday, August 26, 2007,  5:00 PM -  8:00 PM</p>
               <p>The first and third steps in the Spiritual Formation process.  Check <a href="/get-connected/next-steps">here</a> for more info or <a href="/resources/registration">register</a> online now.</p>
             </div>
-          </div> <!-- #content -->
+      </section> <!-- #content -->
+      <aside id="sidebar">
 
-        </div> <!-- #content-wrap -->
-      </div> <!-- #container-inner -->
-    
+      </aside> <!-- #sidebar -->
+    </div> <!-- #content-wrap -->
+  </div> <!-- #main-container -->
+
+  <div id="footer-container">
     <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/footer.php") ?>
-    
-    </div> <!-- #container -->
-  
-    <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/scripts.php") ?>
-  </body>
+  </div> <!-- #footer-container -->
+
+  <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/scripts.php") ?>
+</body>
 </html>

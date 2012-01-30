@@ -15,7 +15,7 @@
     <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/header.php") ?>
   </div> <!-- #header-container -->
   
-  <div id="main">
+  <div id="main-container">
     <div id="content-wrap">
       <section id="content">
         <h2>This is a 2nd level heading</h2>
@@ -45,7 +45,7 @@
         
       </aside> <!-- #sidebar -->
     </div> <!-- #content-wrap -->
-  </div> <!-- #main -->
+  </div> <!-- #main-container -->
   
   <div id="footer-container">
     <?php include($_SERVER["DOCUMENT_ROOT"]."/_inc/footer.php") ?>
