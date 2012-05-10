@@ -9,40 +9,38 @@ $blueprint-grid-margin: 10px;
 
 @import "blueprint/grid";
 
-body{
+body {
   font:16px/26px Helvetica, Helvetica Neue, Arial;
   background-color: #cccccc;
 }
 
-h1, h2, h3{margin:0 0 30px; line-height: 1;}
-h2{font-size: 40px;}
-h3{font-size: 30px;}
+h1, h2, h3 {margin:0 0 30px; line-height: 1;}
+h2 {font-size: 40px;}
+h3 {font-size: 30px;}
 
-#title, h2, h3{font-weight:normal;}
+#title, h2, h3 {font-weight:normal;}
 
-#title{
+#title {
   font-size: 60px;
   color:white;
   float:left;
 }
 
-#header-container{
+#header-container {
   background-color:#f16529;
   height:130px;
   border-bottom:20px solid #e44d26;
   margin-bottom:50px;
-  -webkit-box-shadow:0 40px 40px -40px #AAA;
-     -moz-box-shadow:0 40px 40px -40px #AAA;
-          box-shadow:0 40px 40px -40px #AAA;
 }
 
-@import "suckerfish";
+@import "partials/suckerfish";
 header {
   @include container();
-  nav {
-    @include suckerfish(100px, 100px);
-  }
 }
+nav ul {
+  @include suckerfish(100px, 100px);
+}
+
 
 .two-col {
   #content-wrap {
@@ -54,33 +52,24 @@ header {
   }
 }
 
-aside{
+aside {
   color:white;
   background-color:#f16529;
   border-bottom:20px solid #e44d26;
   margin-bottom:50px;
-  -webkit-box-shadow:0 0px 40px -10px #AAA;
-     -moz-box-shadow:0 0px 40px -10px #AAA;
-          box-shadow:0 0px 40px -10px #AAA;
 }
 
-article header{
+article header {
   margin-bottom:50px;
   padding-bottom:30px;
   width:700px;
-  -webkit-box-shadow:0 45px 60px -60px #AAA;
-     -moz-box-shadow:0 45px 60px -60px #AAA;
-          box-shadow:0 45px 60px -60px #AAA;
 }
 
-#footer-container{
+#footer-container {
   background-color:#f16529;
   height:240px;
   border-top:20px solid #e44d26;
   margin-top:50px;
-  -webkit-box-shadow:0 -40px 40px -40px #AAA;
-     -moz-box-shadow:0 -40px 40px -40px #AAA;
-          box-shadow:0 -40px 40px -40px #AAA;
 }
 
 #footer-container footer{

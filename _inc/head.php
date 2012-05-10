@@ -4,6 +4,5 @@
 
 <link rel="stylesheet" href="/_css/boilerplate.css" />
 <link rel="stylesheet" href="/_css/styles.css" title="default" />
-<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
 
-<script src="/_js/libs/modernizr.min.js"></script>
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />

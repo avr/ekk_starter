@@ -35,9 +35,6 @@ h3 {
   height: 130px;
   border-bottom: 20px solid #e44d26;
   margin-bottom: 50px;
-  -webkit-box-shadow: 0 40px 40px -40px #aaaaaa;
-  -moz-box-shadow: 0 40px 40px -40px #aaaaaa;
-  box-shadow: 0 40px 40px -40px #aaaaaa;
 }
 
 header {
@@ -46,40 +43,31 @@ header {
   overflow: hidden;
   *zoom: 1;
 }
-header nav ul {
+
+nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   line-height: 1;
 }
-header nav a {
+nav ul a {
   display: block;
   width: 100px;
 }
-header nav li {
+nav ul > li {
   float: left;
   width: 100px;
 }
-header nav li:hover ul, header nav li.sfhover ul {
-  left: auto;
-}
-header nav li:hover ul li, header nav li.sfhover ul li {
-  float: none;
-  display: block;
-}
-header nav li:hover ul ul, header nav li.sfhover ul ul {
-  left: -999em;
-}
-header nav li li:hover ul, header nav li li.sfhover ul {
-  left: auto;
-}
-header nav li ul {
+nav ul li ul {
   position: absolute;
   width: 100px;
   left: -999em;
 }
-header nav li ul ul {
+nav ul li ul ul {
   margin: -1em 0 0 100px;
+}
+nav ul li:hover > ul {
+  left: auto;
 }
 
 .two-col #content-wrap {
@@ -112,18 +100,12 @@ aside {
   background-color: #f16529;
   border-bottom: 20px solid #e44d26;
   margin-bottom: 50px;
-  -webkit-box-shadow: 0 0px 40px -10px #aaaaaa;
-  -moz-box-shadow: 0 0px 40px -10px #aaaaaa;
-  box-shadow: 0 0px 40px -10px #aaaaaa;
 }
 
 article header {
   margin-bottom: 50px;
   padding-bottom: 30px;
   width: 700px;
-  -webkit-box-shadow: 0 45px 60px -60px #aaaaaa;
-  -moz-box-shadow: 0 45px 60px -60px #aaaaaa;
-  box-shadow: 0 45px 60px -60px #aaaaaa;
 }
 
 #footer-container {
@@ -131,9 +113,6 @@ article header {
   height: 240px;
   border-top: 20px solid #e44d26;
   margin-top: 50px;
-  -webkit-box-shadow: 0 -40px 40px -40px #aaaaaa;
-  -moz-box-shadow: 0 -40px 40px -40px #aaaaaa;
-  box-shadow: 0 -40px 40px -40px #aaaaaa;
 }
 
 #footer-container footer {
