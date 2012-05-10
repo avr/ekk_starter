@@ -1,76 +1,124 @@
-/*
-Syntax error: File to import not found or unreadable: suckerfish.
-              Load paths:
-                /Users/aver/Desktop/Dropbox/tipping_media/sunvalley/_local-dev/_sass
-                /Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/frameworks/blueprint/stylesheets
-                /Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/frameworks/compass/stylesheets
-                Compass::SpriteImporter
-        on line 39 of /Users/aver/Desktop/Dropbox/tipping_media/sunvalley/_local-dev/_sass/styles.scss
+/* =============================================================================
+   Author: Aaron Van Ruler
+   Site: 
+   ========================================================================== */
+body {
+  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+  background-color: #cccccc;
+}
 
-Backtrace:
-/Users/aver/Desktop/Dropbox/tipping_media/sunvalley/_local-dev/_sass/styles.scss:39
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/tree/import_node.rb:64:in `import'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/tree/import_node.rb:25:in `imported_file'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/tree/visitors/perform.rb:149:in `visit_import'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/tree/visitors/perform.rb:27:in `visit_children'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/tree/visitors/perform.rb:39:in `with_environment'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/tree/visitors/perform.rb:26:in `visit_children'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/tree/visitors/perform.rb:47:in `visit_root'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/tree/visitors/perform.rb:18:in `visit'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/tree/root_node.rb:20:in `render'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/engine.rb:299:in `_render'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.17/lib/sass/../sass/engine.rb:246:in `render'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/compiler.rb:140:in `compile'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/compiler.rb:126:in `timed'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/compiler.rb:139:in `compile'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/logger.rb:45:in `red'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/compiler.rb:138:in `compile'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/compiler.rb:118:in `compile_if_required'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/compiler.rb:103:in `run'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/compiler.rb:101:in `each'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/compiler.rb:101:in `run'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/compiler.rb:126:in `timed'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/compiler.rb:100:in `run'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/commands/watch_project.rb:147:in `recompile'
-/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `to_proc'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `modified'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/commands/watch_project.rb:87:in `perform'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/commands/base.rb:18:in `execute'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/bin/compass:29
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/bin/compass:43:in `call'
-/Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/bin/compass:43
-/usr/local/bin/compass:19:in `load'
-/usr/local/bin/compass:19
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: suckerfish.\A               Load paths:\A                 /Users/aver/Desktop/Dropbox/tipping_media/sunvalley/_local-dev/_sass\A                 /Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/frameworks/blueprint/stylesheets\A                 /Users/aver/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.1/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 39 of /Users/aver/Desktop/Dropbox/tipping_media/sunvalley/_local-dev/_sass/styles.scss"; }
+h1, h2, h3 {
+  margin: 0 0 30px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+#title, h2, h3 {
+  font-weight: normal;
+}
+
+#title {
+  font-size: 60px;
+  color: white;
+  float: left;
+}
+
+#header-container {
+  background-color: #f16529;
+  height: 130px;
+  border-bottom: 20px solid #e44d26;
+  margin-bottom: 50px;
+}
+
+header {
+  width: 1185px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+nav ul a {
+  display: block;
+  width: 100px;
+}
+nav ul > li {
+  float: left;
+  width: 100px;
+}
+nav ul li ul {
+  position: absolute;
+  width: 100px;
+  left: -999em;
+}
+nav ul li ul ul {
+  margin: -1em 0 0 100px;
+}
+nav ul li:hover > ul {
+  left: auto;
+}
+
+.two-col #content-wrap {
+  width: 1185px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+.two-col #content {
+  display: inline;
+  float: left;
+  margin-right: 15px;
+  width: 885px;
+}
+* html .two-col #content {
+  overflow-x: hidden;
+}
+.two-col #sidebar {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 285px;
+}
+* html .two-col #sidebar {
+  overflow-x: hidden;
+}
+
+aside {
+  color: white;
+  background-color: #f16529;
+  border-bottom: 20px solid #e44d26;
+  margin-bottom: 50px;
+}
+
+article header {
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  width: 700px;
+}
+
+#footer-container {
+  background-color: #f16529;
+  height: 240px;
+  border-top: 20px solid #e44d26;
+  margin-top: 50px;
+}
+
+#footer-container footer {
+  width: 1185px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  color: white;
+}

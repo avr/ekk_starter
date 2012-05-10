@@ -1,4 +1,4 @@
-<div id="sidebar">
+<div class="box">
   <h3>Sermon Archive</h3>
     <p id="side-podcastlink">
       <a href="#">Podcast Link</a>
@@ -41,4 +41,4 @@
       <li><a href="#">Month 2</a></li>
       <li><a href="#">Month 3</a></li>
     </ul>
-</div><!-- #sidebar -->
+</div><!-- .box -->

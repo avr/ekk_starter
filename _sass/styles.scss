@@ -5,7 +5,7 @@
 
 $blueprint-grid-columns: 16;
 $blueprint-grid-width: 60px;
-$blueprint-grid-margin: 10px;
+$blueprint-grid-margin: 15px;
 
 @import "blueprint/grid";
 
@@ -41,15 +41,14 @@ nav ul {
   @include suckerfish(100px, 100px);
 }
 
-
 .two-col {
   #content-wrap {
     @include container;
-    #content {
-      @include column(12); }
-    #sidebar {
-      @include column(4, true); }
   }
+  #content {
+    @include column(12); }
+  #sidebar {
+    @include column(4, true); }
 }
 
 aside {
